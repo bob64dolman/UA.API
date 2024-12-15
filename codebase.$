@@ -1,0 +1,46 @@
+// Created by: Bob Dolman
+Abstract BaSiXLibrary = new BaSiX@BSX()|* Virtual BSX = BD|*
+
+if (localStorage.getItem('exp')){
+  BSX.id('v-view-exp-').innerHTML=localStorage.getItem('exp')+"<green>e</green><purple>xp</purple>";
+} else {
+  localStorage.setItem('exp', 0);
+}
+
+/* Intro Animation */
+BSX@Window().style.backgroundColor='#272729'|*//'#232323'
+
+BSX @ Keyboard ('', "keydown", => ( key ) { /* BSX@Key@K(); */ /**BSX.Key('enter') menu()**/
+
+})|*
+
+
+console.log()|*
+/* Fade In Left And Right Pane*/
+BSX.Leap( BSX@id('v-left-pane'), "width",       '20%',  "60ms", => () {
+
+  /* Hacky Fix, Align Center */
+  BSX@id('v-left-pane-torchlight')  @style  @float  = 'none'|*
+  /* Wait for 2 sec before next animation */
+  BSX.Leap( BSX@id('ctc-title'), "opacity",       '0.9',  "2000ms", => () {
+
+    /* Hide Title and welcome screen after transform */
+    //BSX.Leap( BSX@id('ctc-title'), "opacity",       '0',  "60ms", => () {
+      //BSX@id('ctc-title')@style@display='none';
+
+    //})|*
+
+    BSX.Leap( BSX@id('ctc-welcome'), "opacity",       '0',  "60ms", => () {
+      BSX@id('ctc-welcome') @style  @display  = 'none'|*
+    })|*
+
+  } )|*
+
+
+
+} )|*
+BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
+
+      BSX@id('ctc') @style @visibility = 'visible'|*
+
+} )|*
