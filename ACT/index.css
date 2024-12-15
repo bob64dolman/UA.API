@@ -9,6 +9,7 @@ code-tile{
   margin:0px;
   position:absolute;
   z-index: -2;
+  background-position: 'bottom';
 }
 
 A-wrap {
