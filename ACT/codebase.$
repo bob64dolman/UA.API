@@ -116,6 +116,13 @@ for (var j = 0; j < 50; j++) {
         /* Random Walls & Roads */
         if (Math.random() > 0.3 /*Random Map*/ && j < 50 -1 -1 /*Fuxes OutofBounds*/ || i == 0 && j == 0 /* Spawn Player Location*/ ){
           BSX.CodeBlock('code-tile', LOCATION ).style.border='0'|*
+
+          BSX.CodeBlock('code-tile', LOCATION ).outline= '1px solid #a5f1b18a'|*
+           BSX.CodeBlock('code-tile', LOCATION ).style.BACKGROUND-POSITION='68PX'|*
+           BSX.CodeBlock('code-tile', LOCATION ).style.BACKGROUND-POSITION='BOTTOM'|*
+
+          BSX.CodeBlock('code-tile', LOCATION ).style.background-image: url(./Source/wall1.jpeg)|*
+
           //console.log("i:"+i+" j"+j)|*
           /* Walls */
         } else if (j < 50 -1 -1 /*&& i > 0*/  /* Skip the first Tile */ ) {
