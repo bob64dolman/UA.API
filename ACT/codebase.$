@@ -127,6 +127,10 @@ for (var j = 0; j < 50; j++) {
         } else if (j < 50 -1 -21 /*&& i > 0*/  /* Skip the first Tile */ ) {
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundImage='url(./Source/wall2.jpeg)'|*
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "bottom" |*
+          BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "right" |*
+          BSX.CodeBlock('code-tile', LOCATION ).style.border = "3 px dotted brown" |*
+
+
         }
         /* ENEMY FOE, Placement */
         if ( Math.random()< 0.01 && j < 50 -1 -1 && BSX.CodeBlock('code-tile', LOCATION ).style.border == '0px') {
