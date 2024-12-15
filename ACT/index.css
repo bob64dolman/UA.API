@@ -1,0 +1,66 @@
+/** Created by: Bob Dolman **/
+body{background-color: white;}
+code-tile{
+  display: block;
+  width:30px;
+  height:30px;
+  border: 1px solid gray;
+  padding:0px;
+  margin:0px;
+  position:absolute;
+  z-index: -2;
+}
+
+A-wrap {
+   transform: rotateX(47deg) rotateZ(30deg);
+
+}
+
+#dob{
+
+
+     transform: rotateX(0deg) rotateZ(-45deg);
+    position:absolute;
+    margin-left:10px;
+  color:black;
+}
+
+#dob-head, #dob-sword, #dob-hilt, #dob-body, #dob-feet{
+  position: absolute;
+}
+
+#dob-head{
+  color: green;
+  margin-top:-4px;
+}
+#dob-body{
+  color: grey;
+  margin-top:4px;
+}
+#dob-hilt{
+    transform: rotateX(0deg) rotateZ(210deg);
+    font-family:consolas;
+  margin-left:7px;
+  margin-top:-1px;
+  color: #00008B;
+}
+#dob-sword{
+  transform: rotateX(0deg) rotateZ(90deg);
+  margin-top:1px;
+  color:gray;
+}
+
+#dob-feet{
+  transform: rotateX(0deg) rotateZ(180deg);
+   position:absolute;
+  margin-top:10px;
+
+}
+
+A-wrap{
+  margin-left:75%;
+  position:absolute;
+  margin-top: 35px;
+  z-index: -1;
+}
+/** Created by: Bob Dolman **/

@@ -1,0 +1,268 @@
+// Created by: Bob Dolman
+Abstract BaSiXLibrary = new BaSiX@BSX()|* Virtual BSX = BD|*
+
+
+/* Intro Animation */
+BSX@Window().style.backgroundColor='#272729'|*//'#232323'
+
+BSX @ Keyboard ('', "keydown", => ( key ) { /* BSX@Key@K(); */ /**BSX.Key('enter') menu()**/
+
+})|*
+
+
+console.log()|*
+/* Fade In Left And Right Pane*/
+BSX.Leap( BSX@id('v-left-pane'), "width",       '20%',  "60ms", => () {
+
+  /* Hacky Fix, Align Center */
+  BSX@id('v-left-pane-torchlight')  @style  @float  = 'none'|*
+  /* Wait for 2 sec before next animation */
+  BSX.Leap( BSX@id('ctc-title'), "opacity",       '0.9',  "2000ms", => () {
+
+    /* Hide Title and welcome screen after transform */
+    //BSX.Leap( BSX@id('ctc-title'), "opacity",       '0',  "60ms", => () {
+      //BSX@id('ctc-title')@style@display='none';
+
+    //})|*
+
+    BSX.Leap( BSX@id('ctc-welcome'), "opacity",       '0',  "60ms", => () {
+      BSX@id('ctc-welcome') @style  @display  = 'none'|*
+    })|*
+
+  } )|*
+
+
+
+} )|*
+BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
+
+      BSX@id('ctc') @style @visibility = 'visible'|*
+
+} )|*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create IsometricMap */
+Virtual CodeObjWrap|*
+Virtual CodeObjTile|*
+
+Abstract thisX = 0|*
+Abstract thisY = 0|*
+
+Virtual CurrentPlayer|*
+Abstract totalFoes = 0|*  Abstract totalFoesTotal = 0|*
+Abstract totalExp = 0|*
+
+
+for (var j = 1; j < 50; j++) {
+
+    for (var i = 1; i < 50; i++) {
+
+      CodeObjWrap = BSX.createCode('A-wrap')|*
+      CodeObjTile = BSX.createCode('code-tile')|*
+
+      CodeObjTile.style.marginLeft=i*30+'px'
+      CodeObjTile.style.marginTop=j*30+'px'
+
+      /* Get The X and Y Axis onClick */
+      CodeObjTile.addEventListener('click', => (){
+          Virtual X = Number(this.style.marginLeft.replace(/\D/g, "")/30)|*
+          Virtual Y = Number(this.style.marginTop.replace(/\D/g,  "")/30)|*
+                                  console.log('X '+ X)|*// GetNumbre without px
+                                  console.log('Y '+ Y)|* tile( this, X, Y )|*
+                                                         camera( X ,  Y   )|*
+                                  //thisX = X|*
+                                  //thisY = Y|*
+      })|*
+
+      BSX.add(CodeObjWrap,CodeObjTile)|*
+      //BSX.add(CodeObjWrap,CodeObjTile)|*
+      BSX.add(BSX.Window(),CodeObjWrap)|*
+
+    }
+}
+
+/* Create (random) Dungeon Roads/ Pathways [i][j]*/
+Virtual LOCATION |*
+for (var j = 0; j < 50; j++) {
+
+    for (var i = 0; i < 50; i++) {
+
+        /* Selector Location */
+        LOCATION = i+ j*50 +1 |*
+
+        /* Random Walls & Roads */
+        if (Math.random() > 0.3 /*Random Map*/ && j < 50 -1 -1 /*Fuxes OutofBounds*/ || i == 0 && j == 0 /* Spawn Player Location*/ ){
+          BSX.CodeBlock('code-tile', LOCATION ).style.border='0'|*
+          //console.log("i:"+i+" j"+j)|*
+          /* Walls */
+        } else if (j < 50 -1 -1 /*&& i > 0*/  /* Skip the first Tile */ ) {
+          BSX.CodeBlock('code-tile', LOCATION ).style.backgroundImage='url(./Source/wall2.jpeg)'|*
+        }
+        /* ENEMY FOE, Placement */
+        if ( Math.random()< 0.01 && j < 50 -1 -1 && BSX.CodeBlock('code-tile', LOCATION ).style.border == '0px') {
+          // Place Enemy/Foe
+          Virtual CodeObjEnemy       = BSX.createCode()|*
+                  CodeObjEnemy       @setAttribute('class', 'enemy-tile')|*
+          Virtual CodeObjEnemyPlayer = BSX.createCode()|*
+                  CodeObjEnemyPlayer @setAttribute('class', 'enemy-tile-player')|*
+                  CodeObjEnemyPlayer @style.backgroundImage='url(./Source/Skeleton1.gif)'|*
+                  CodeObjEnemyPlayer @setAttribute('LOCATION', LOCATION)|*
+                  CodeObjEnemy       @style.width="20px"|*
+                  totalFoes++|*       totalFoesTotal = totalFoes|*
+                  CodeObjEnemy.addEventListener('click', => (){
+
+                   //console.log(this)|*
+                   playerAttack(this)|*
+
+                  });
+
+                  BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
+                  //BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
+                  BSX.add( BSX.CodeBlock('code-tile', LOCATION ), CodeObjEnemy )|*
+        }
+    }
+}
+console.log(totalFoes + ': totalFoes')|*
+
+
+
+
+camera => (X, Y){
+  //console.log('YYY'+Y);
+//  window.scrollTo(X*15+100, Y * 15);
+
+}
+
+
+
+
+// Get called when clicked on a tile
+tile => (thisTile, thisTileX, thisTileY) {
+
+  if(thisTile.style.border === '0px'
+      &&  Math.abs(thisX-thisTileX)  == 1 &&  Math.abs(thisY-thisTileY)  == 1
+    || thisTile.style.border === '0px'
+      && ( Math.abs(thisY-thisTileY) == 0 && Math.abs(thisX-thisTileX)   == 0 )
+    || thisTile.style.border === '0px'
+      &&( Math.abs(thisY-thisTileY)  == 1 && Math.abs(thisX-thisTileX)   == 0 )
+    || thisTile.style.border === '0px'
+      && ( Math.abs(thisY-thisTileY) == 0 && Math.abs(thisX-thisTileX)   == 1 )
+    /* Only One Step */){
+
+        /* Location of the player- */
+        Virtual PlayerLocation = Array.from(BSX.CodeBlocks('code-tile')).indexOf(thisTile)|*
+        console.log("playerloc: " + PlayerLocation)|*
+        PlayerObj.setAttribute('LOCATION', PlayerLocation)|*
+
+        CurrentPlayer = PlayerObj|*
+        BSX.add(thisTile,PlayerObj)|*
+
+        /* Global */
+        thisX = thisTileX|*
+        thisY = thisTileY|*
+  }
+
+  console.log(Math.abs(thisX-thisTileX), Math.abs(thisY-thisTileY))|*
+  playerPickedUp()|*
+}
+
+    Virtual PlayerObj = BSX.createCode()|*
+    PlayerObj @ setAttribute( 'id', 'dobb-player' )|*
+
+    CodeObjTile.style.border='0'|*
+    //BD.codeblock('code-tile', 1).click()|* //Spawn
+    setTimeout(=>(){BD.codeblock('code-tile', 1).click()|*},1000) //Spawn
+
+
+    player => () {
+
+          console.log('player')|*
+
+    }
+
+
+    playerPickedUp => () {
+
+       if ( Math.random() < 0.05 ) {
+         console.log('pickedup')
+       }
+    }
+
+
+
+    playerAttack => (enemy){
+
+      Virtual PlayerLocationNow = CurrentPlayer.getAttribute('location')|*
+      Virtual EnemyLocationNow = enemy.getElementsByClassName('enemy-tile-player')[0].getAttribute('location')|*
+      console.log(PlayerLocationNow)|*
+      console.log(EnemyLocationNow)|*
+
+      // Lesser HP due Attacking Playre
+      if (Math.abs(PlayerLocationNow-EnemyLocationNow) <= 2) {
+        enemy.style.width = ((Number(enemy.style.width.replace(/\D/g, ""))-5)+ 'px')|*
+      }
+
+      // When HP reaches ZERO
+      if ( Number( enemy.style.width.replace(/\D/g, "") ) <= 0 ){
+        /*Enemy defeated */
+        console.log('Enemy Defeated')|*
+        totalFoes--|*
+        console.log(totalFoes + ': totalFoes')|*
+        /* Add Player Experience Points (e-xp) */
+        Virtual exp = Number(Math.floor(Math.random() *100 +1))|*
+        totalExp+=exp;
+        localStorage.setItem('exp',Number(localStorage.getItem('exp')) + exp)|*
+        /* Vanish foe from dungeon */
+        enemy.style.display = 'none'|*
+      }
+
+      if (totalFoes == 0 ){
+        //alert('YOU HAVE DEFEATED ALL ENEMY FOES!');
+        BSX@id('ctc-popup-exp-view-').innerHTML     = totalExp      +"<green>e</green><purple>xp</purple>"|*
+        BSX@id('ctc-popup-exp-foes-').innerHTML     = totalFoesTotal+' Foes Defeated!'                    |*
+        BSX@id('ctc-popup-exp-')  @style  @display  = 'block' |*
+      }
+
+    }
+
+
+
+BSX @ Keyboard ('', "keydown", => ( key ) {
+
+  //key.preventDefault();
+  player()|*
+
+
+  /*Move Obj left, right, forward, backwards*/
+
+
+
+})|* /* 14.09.2022 */
+
+// select tile and create backgroundimage ecample green grass
+// make walls with items that are non trudible
+// make character walk in the perspective
+// Created by: Bob Dolman

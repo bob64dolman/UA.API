@@ -1,0 +1,46 @@
+/** Created by: Bob Dolman **/
+code-tile:hover {
+    background-color: black;
+    border: 1px solid gold;
+    outline: 1px solid black;
+}
+
+code-tile{
+
+  background-image: url(./Source/wall1.jpeg);
+  outline: 1px solid #a5f1b18a;/*#f5deb3c2;*/
+}
+
+.enemy-tile{
+
+  width: 10px;
+  height: 3px;
+  outline: 1px solid wheat;
+  background-color: red;
+  transform: rotateX(0deg) rotateZ(-27deg);
+}
+
+.enemy-tile-player{
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  z-index: 99;
+}
+
+#dobb-player{
+  width: 22px;
+  height: 58px;
+  background-color: orange;
+  /* transform: rotateX(47deg) rotateZ(30deg); */
+  transform: rotateX(0deg) rotateZ(-27deg);
+  margin-left: 0px;
+  margin-top: -30px;
+  position: absolute;
+  /* margin-top: 80px; */
+  background: url(./Source/Skeleton1.gif);
+  background-size: 30px 55px;
+  border:1px solid green;
+  z-index: -1;
+
+}
+/** Created by: Bob Dolman **/
