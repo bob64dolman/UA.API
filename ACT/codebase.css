@@ -44,7 +44,12 @@ code-tile{
     /* 2024 / 14 / 12 /  2024 */
     background-color: MINTCREAM;
     BORDER-RADIUS: 99%;
-}
+    background-size: 20px 53px;
+        background-size: 20px 53px;
+    border: 1px solid #805700;
+    z-index: -1;
+    background-color: MINTCREAM;
+    BORDER-RADIUS: 127%;
 
 }
 /** Created by: Bob Dolman **/
