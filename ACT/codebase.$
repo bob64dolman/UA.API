@@ -116,7 +116,7 @@ for (var j = 0; j < 50; j++) {
         /* Random Walls & Roads */
         if (Math.random() > 0.3 /*Random Map*/ && j < 50 -1 -1 /*Fuxes OutofBounds*/ || i == 0 && j == 0 /* Spawn Player Location*/ ){
           BSX.CodeBlock('code-tile', LOCATION ).style.border='0'|*
-          BSX.CodeBlock('code-tile', LOCATION ).outline= '3px solid #a5f1b18a'|* //api3px 20241214
+          BSX.CodeBlock('code-tile', LOCATION ).outline= '3px solid #a5f1b18a'|* 
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundImage = "url(./Source/wall1.jpeg)" |*
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "bottom" |*
           BSX.CodeBlock('code-tile', LOCATION ).style.border = "3px dotted brown" |*
@@ -127,8 +127,7 @@ for (var j = 0; j < 50; j++) {
         } else if (j < 50 -1 -21 /*&& i > 0*/  /* Skip the first Tile */ ) {
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundImage='url(./Source/wall2.jpeg)'|*
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "bottom" |*
-          BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "right" |*
-          BSX.CodeBlock('code-tile', LOCATION ).style.border = "3 px dotted brown" |*
+          BSX.CodeBlock('code-tile', LOCATION ).style.border = "3px dotted brown" |*
 
 
         }
