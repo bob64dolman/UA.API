@@ -119,6 +119,7 @@ for (var j = 0; j < 50; j++) {
           BSX.CodeBlock('code-tile', LOCATION ).outline= '1px solid #a5f1b18a'|*
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundImage = "url(./Source/wall1.jpeg)" |*
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "bottom" |*
+          BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "right" |*
 
 
           //console.log("i:"+i+" j"+j)|*
