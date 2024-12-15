@@ -118,8 +118,8 @@ for (var j = 0; j < 50; j++) {
           BSX.CodeBlock('code-tile', LOCATION ).style.border='0'|*
 
           BSX.CodeBlock('code-tile', LOCATION ).outline= '1px solid #a5f1b18a'|*
-           BSX.CodeBlock('code-tile', LOCATION ).style.BACKGROUND.POSITION='68PX'|*
-           BSX.CodeBlock('code-tile', LOCATION ).style.BACKGROUND.POSITION='BOTTOM'|*
+           BSX.CodeBlock('code-tile', LOCATION ).style.POSITION='68PX'|*
+           BSX.CodeBlock('code-tile', LOCATION ).style.POSITION='BOTTOM'|*
 
           BSX.CodeBlock('code-tile', LOCATION ).style.background-image: url(./Source/wall1.jpeg)|*
 
