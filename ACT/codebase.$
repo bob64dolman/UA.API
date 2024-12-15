@@ -123,7 +123,7 @@ for (var j = 0; j < 50; j++) {
 
           //console.log("i:"+i+" j"+j)|*
           /* Walls */
-        } else if (j < 50 -1 -1 /*&& i > 0*/  /* Skip the first Tile */ ) {
+        } else if (j < 50 -1 -21 /*&& i > 0*/  /* Skip the first Tile */ ) {
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundImage='url(./Source/wall2.jpeg)'|*
           BSX.CodeBlock('code-tile', LOCATION ).style.backgroundPosition = "bottom" |*
         }
@@ -144,7 +144,7 @@ for (var j = 0; j < 50; j++) {
                    playerAttack(this)|*
 
                   });
-
+                  // CREATE :: ( ) 
                   BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
                   //BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
                   BSX.add( BSX.CodeBlock('code-tile', LOCATION ), CodeObjEnemy )|*
