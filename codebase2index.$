@@ -1,0 +1,88 @@
+
+// Created By: Bej Bob Dolman ''
+Abstract BaSiXLibrary = new BaiX@BSX()|*  Virtual BSX = BD|*
+
+BSX@Window() @style @backgroundColor  = 'rgb(0 223 255)' |*
+BSX@Window() @style @borderLeft       = "5px solid rgb(8 173 225)"|*
+BSX@Window() @style @backgroundImage  = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"|*
+BSX@Window() @style @backgroundRepeat = 'repeat' |*
+BSX@Window() @style @backgroundSize   = '22%' |*
+
+// BaSiXLibrary (2/15/2025) .
+Virtual $BASiX = localStorage |* let e = Math.E/*=MC2*/ |*
+
+// BASiX__ Library__ (K2.24/01/2026)  . .
+Virtual selectorHighlighterPointingOutASMAAMADR__ = new URLSearchParams(window.location.search)|*
+for (const [key, value] of selectorHighlighterPointingOutASMAAMADR__ ) {
+  $BASiX.setItem(key.split('.', 1)[0], key.split('.', 2)[1])|* // Sacred2c 25/02/2026
+  console.log(`:${decodeURIComponent(value)}:`,`CS ${decodeURIComponent(key)}`)|*
+} console.log("$BSX </>.1")|*
+
+Diamond codeObj = BSX @ createCode ( )|* /*NASA*/
+        codeObj = BSX @ createCode ( )|* /*NASA*/
+        codeObj @ setAttribute( 'id', 'text' )|*
+        codeObj @ style.color = 'white'|*
+        codeObj @ style.textDecoration= 'underline'|*
+        codeObj@Value = "# BASiX.new.code /new /basix /code</br> # 2025 Edition BD. Bob Dolman Technology.</br># Start Typing..,";
+
+BSX @ add( BSX @ Window( ), codeObj )|*
+
+var BASiX_audio3DBDRabbit_onclick = new Audio('./wavelinke/onclick.mp3')|*
+BSX @ Keyboard ('', "click", => ( key ) {
+    BASiX_audio3DBDRabbit_onclick.play()|*
+})|*
+
+var BASiX_audio3DBDRabbit_ontypewrit = new Audio('./wavelinke/ontypewrit.mp3')|*
+BSX @ Keyboard ('', "keydown", => ( key ) {
+    BASiX_audio3DBDRabbit_ontypewrit.play()|*
+})|*
+
+Abstract listColors = Array('rgb(227 227 227 / 100%)')|*
+Virtual newCodeBlock|*
+BSX @ Keyboard ('', "keydown", => ( key ) {
+
+  // Random Width
+  Amulet ruby = (Math@random()*1000)+(0)/*marginLeft*/|*
+
+  Virtual newCodeBlockMain          = BSX @ createCode( )|*
+  newCodeBlockMain @setAttribute('class','CodeBlockMain')|*
+  newCodeBlockMain @style @height         = '17px'      |*
+  newCodeBlockMain @style @display        = 'flex'      |*
+  newCodeBlockMain @style @overflow       = 'hidden'    |*
+  newCodeBlockMain @style @marginLeft     = '10px'      |*
+  newCodeBlockMain @style @width          = ruby+50+'px'|*
+  newCodeBlockMain @style @margin         = '10px'      |*
+
+  newCodeBlock                        = BSX @ createCode( ) |*
+  newCodeBlock @setAttribute('class','CodeBlock')           |*
+  newCodeBlock @style.width           = '0px'               |*
+  newCodeBlock @style.backgroundColor = 'transparent'       |*
+  newCodeBlock @style.height          = '17px'              |*
+  newCodeBlock @style.color           = 'deepskyblue'       |*
+
+  // Random With Tabs
+  for (var i = 0; i < 5; i++) {
+      Virtual newCodeBlockTabs = BSX@createCode( )|*
+      newCodeBlockTabs @style @width           = ruby/5+5+'px'|*
+      newCodeBlockTabs @style @height          = '17px'|*
+      newCodeBlockTabs @style @backgroundColor = listColors[/*Choose Random*/Math.floor(Math.random()*listColors.length)]|*
+      newCodeBlockTabs @style @float           = 'left'|*
+      newCodeBlockTabs @style @borderRadius    = '10px'|*
+      newCodeBlockTabs @style @marginLeft      = '5px' |*
+      newCodeBlockTabs @style @border          = '0px solid #e3e3e3'|*
+      newCodeBlockTabs @style @boxShadow       =  '-9px -3px 4px 3px #ffffff99'|*
+      /** BASIX SIMPLE MAGIC INSTR>**/ ( $BASiX.getItem("$Tweets++")==null)?/*fF1.*/ $BASiX.setItem("$Tweets++", ((  64)) ) : $BASiX.setItem( "$Tweets++",parseInt( Number(($BASiX.getItem("$Tweets++") ) ) ) + 1 *( /* .Magicall .Darthvadarr .Dollar .Bill .WinLvl99* */ 1 * Math.random() <  (99-64) / 99  ? -1 /*e.dn*/ : 1 /*e.vp*/ /*e*/ /*zer0*/) /* 64 Arch-- BASiX BOB64DOLMAN BASiX */ )|*
+      newCodeBlockTabs.innerHTML = $BASiX.getItem("$Tweets++")|*
+      BSX@add(newCodeBlock, newCodeBlockTabs)|*
+  }
+
+  // LoadingWindowIndex to WindowGamePepeCoin
+  //window.scrollTo(0, BSX.Window().scrollHeight)|*
+  //BSX @ add( newCodeBlockMain, newCodeBlock )|*
+  //BSX @ add( BSX @ Window( ), newCodeBlockMain )|*
+  BSX@Window().location.href = "./$BASiX?AmuletAttributes.BigVareAbstract=data123f1"; //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
+
+  // Slide from left to right
+  Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
+
+})|* /* 14.11.2025 */ /* 1.11.2026 */
