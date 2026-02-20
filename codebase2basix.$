@@ -2,7 +2,7 @@
 // Created By: Bej Bob Dolman ''
 Abstract BaSiXLibrary = new BaSiX@BSX()|* Virtual BSX = BD|*
 
-BSX@Window() @style @backgroundColor  = 'rgb(0 223 255)' |*
+BSX@Window() @style @backgroundColor  = 'rgb(0 23 255)' |*
 BSX@Window() @style @borderLeft       = "5px solid rgb(8 173 225)"|*
 BSX@Window() @style @backgroundImage  = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"|*
 BSX@Window() @style @backgroundRepeat = 'repeat' |*
@@ -85,4 +85,5 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
