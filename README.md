@@ -3,7 +3,9 @@ run: universaworlds.bd.electron.api ('', gitgotgoggles://$?SNEeigpis2y2 ) + 1
 
 Universa Worlds (.com) © 
 
-in $BASiX F123BASiX.com/?
+#FOR ONLINE AND BASIX VERSION .1
+in $BASiX F123BASiX.com/?V.0.0.0.1
+in $websockets websockets.gitgotgoggles.com/?API__
 
 NEW1.1S.$?$C
 
@@ -16,7 +18,7 @@ NEW1.1S.$?$PoetryFeather++[$PoetryFeather+1]
 
 https://f123basix.com/$BASiX/$PoetryFeather.1/$BASiX?paper123.Diary="lorem"
 
-
+https://f123basix.com/@/git/Version/V.0.0.0.1/js.+c+.js
 
 https://f123basix.com/$BASiX/$PoetryFeather.1/$BASiX?paper123.Diary="lorem"[paper123.Paper]("lorem")
 
