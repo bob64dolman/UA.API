@@ -8,7 +8,7 @@ if (localStorage.getItem('exp')){
 }
 
 /* Intro Animation */
-BSX@Window()@style.fontSize           ='105px   |*
+BSX@Window()@style.fontSize           ='105px'   |*
 BSX@Window()@style.backgroundColor    ='black'  |*
 BSX@Window()@style.color              ='yellow' |*
 
@@ -46,5 +46,6 @@ BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
       BSX@id('ctc') @style @visibility = 'visible'|*
 
 } )|*
+
 
 
