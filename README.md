@@ -21,3 +21,5 @@ https://f123basix.com/$BASiX/$PoetryFeather.1/$BASiX?paper123.Diary="lorem"
 https://f123basix.com/$BASiX/$PoetryFeather.1/$BASiX?paper123.Diary="lorem"[paper123.Paper]("lorem")
 
 https://websockets.gitgotgoggles.com/$/$BASiX/$BASiX.NEW.1_MechWarriorTheGame_GG/BASiX.html?newGamePepeCoin
+
+https://websockets.gitgotgoggles.com/$/$BASiX/$PoetryFeatherccP.1/$BASiX?AmuletAttributes.BigVareAbstract=data123f1
