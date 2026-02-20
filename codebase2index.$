@@ -23,7 +23,7 @@ Diamond codeObj = BSX @ createCode ( )|* /*NASA*/
         codeObj @ setAttribute( 'id', 'text' )|*
         codeObj @ style.color = 'white'|*
         codeObj @ style.textDecoration= 'underline'|*
-        codeObj@Value = "# BASiX.new.code /new /basix /code</br> # 2025 Edition BD. Bob Dolman Technology.</br># Start Typing..,";
+        codeObj@Value = "#WS:: X_CS in F123BASIX Loading on Any KeyPress </br> # 2025 Edition BD. Bob Dolman Technology.</br> Continue Click'n";
 
 BSX @ add( BSX @ Window( ), codeObj )|*
 
@@ -88,6 +88,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
