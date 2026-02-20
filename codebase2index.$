@@ -80,7 +80,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   //window.scrollTo(0, BSX.Window().scrollHeight)|*
   //BSX @ add( newCodeBlockMain, newCodeBlock )|*
   //BSX @ add( BSX @ Window( ), newCodeBlockMain )|*
-  setTimeOut(function(){
+  setTimeout(function(){
       window.location.href = "./$BASiX?AmuletAttributes.BigVareAbstract=data123f1"; //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
   }, 1337);
 
@@ -88,6 +88,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
