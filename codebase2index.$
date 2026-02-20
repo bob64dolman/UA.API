@@ -1,6 +1,6 @@
 
 // Created By: Bej Bob Dolman ''
-Abstract BaSiXLibrary = new BasiX@BSX()|*  Virtual BSX = BD|*
+Abstract BaSiXLibrary = new BaSiX@BSX()|* Virtual BSX = BD|*
 
 BSX@Window() @style @backgroundColor  = 'rgb(0 223 255)' |*
 BSX@Window() @style @borderLeft       = "5px solid rgb(8 173 225)"|*
@@ -86,5 +86,6 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
