@@ -8,10 +8,12 @@ if (localStorage.getItem('exp')){
 }
 
 /* Intro Animation */
-BSX@Window().style.backgroundColor='#272729'|*//'#232323'
+BSX@Window().style.fontSize='105px*//'#232323'
+BSX@Window().style.backgroundColor='black'|*//'#232323'
+BSX@Window().style.color='yellow'|*//'#232323'
 
 BSX @ Keyboard ('', "keydown", => ( key ) { /* BSX@Key@K(); */ /**BSX.Key('enter') menu()**/
-
+  console.log('Welcome \n Universa Worlds . com');
 })|*
 
 
@@ -44,3 +46,4 @@ BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
       BSX@id('ctc') @style @visibility = 'visible'|*
 
 } )|*
+
