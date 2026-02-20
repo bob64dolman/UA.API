@@ -85,9 +85,10 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   }, 1337);
 
   // Slide from left to right
-  Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
+  BSX@Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
