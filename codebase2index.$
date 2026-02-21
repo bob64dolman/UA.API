@@ -84,12 +84,13 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   setTimeout(function(){
       // NEW1.1 spacw C.++__INPUT-MAGIC WS#
       window.location.href = "./$BASiX?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random()*99+1)|*// MAGiC >-= 2 //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
-  }, 1337);
+  }, Math.floor((Math.random()+1)*1337))|* // MAGiC
 
   // Slide from left to right
   BSX@Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
