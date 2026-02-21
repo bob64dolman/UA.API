@@ -82,13 +82,14 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   //BSX @ add( newCodeBlockMain, newCodeBlock )   |*
   //BSX @ add( BSX @ Window( ), newCodeBlockMain )|*
   setTimeout(function(){
-      window.location.href = "./$BASiX/?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random())|* //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
+      window.location.href = "./$BASiX/?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random()*99+1)|*// MAGiC >-= 2 //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
   }, 1337);
 
   // Slide from left to right
   BSX@Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
