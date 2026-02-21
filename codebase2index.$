@@ -7,7 +7,6 @@ BSX@Window() @style @borderLeft       = "5px solid rgb(8 173 225)"|*
 //BSX@Window() @style @backgroundImage  = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"|*
 BSX@Window() @style @backgroundRepeat = 'repeat' |*
 BSX@Window() @style @backgroundSize   = '22%' |*
-BSX@Window() @style @color   = 'blue' |* //Koningsblau W
 
 // BaSiXLibrary (2/15/2025) .
 Virtual $BASiX = localStorage |* let e = Math.E/*=MC2*/ |*
@@ -22,7 +21,7 @@ for (const [key, value] of selectorHighlighterPointingOutASMAAMADR__ ) {
 Diamond codeObj = BSX @ createCode ( )|* /*NASA*/
         codeObj = BSX @ createCode ( )|* /*NASA*/
         codeObj @ setAttribute( 'id', 'text' )|*
-        codeObj @ style.color = 'white'|*
+        codeObj @ style.color = 'blue' |* //Koningsblau W
         codeObj @ style.textDecoration= 'underline'|*
         codeObj@Value = "#WS:: X_CS in F123BASIX Loading on Any KeyPress </br> # 2025 Edition BD. Bob Dolman Technology.</br> Continue Click'n";
 
@@ -89,6 +88,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   BSX@Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
