@@ -24,7 +24,7 @@ Diamond codeObj = BSX @ createCode ( )|* /*NASA*/
         codeObj @ style.color = 'blue' |* //Koningsblau W
         codeObj @ style.padding = '25%' |* //Koningsblau W
         codeObj @ style.textDecoration= 'underline'|*
-        console.log('$[NOTICE]::e CS4.5'+ "#WS:: X_CS in F123BASIX Loading on Any KeyPress </br> # 2025 Edition BD. Bob Dolman Technology.</br> Continue Click'n");
+        console.log('$[NOTICE]::e CS4.5'+ "#WS:: X__CS in F123BASIX. BD ")|*
         codeObj@Value = "LOADING... [REMEMBER F5 or Keyboard Press]" ;
         BSX @ add( BSX @ Window( ), codeObj )|*
 
@@ -89,6 +89,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   BSX@Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
 
 })|* /* 14.11.2025 */ /* 1.11.2026 */
+
 
 
 
