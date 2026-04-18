@@ -36,10 +36,15 @@ code-tile{
   margin-left: 0px;
   margin-top: -30px;
   position: absolute;
-  /* margin-top: 80px; */
+  /* Playe One $ Int */
   background: url(./Source/Skeleton1.gif);
   background-size: 30px 55px;
-  border:1px solid green;
+    /* Attributes */
+    border: 2px solid #0b36f1;
+    padding: 5px;
+    box-shadow: aliceblue;
+    height: 112px;
+    background-color: #cff6f5;
   z-index: -1;
 
 }
