@@ -43,15 +43,17 @@ Virtual newCodeBlock|*
 BSX @ Keyboard ('', "keydown", => ( key ) {
 
   // Random Width
-  Amulet ruby = ((Math.random()+1)*1337)|*
+  Amulet ruby = ((Math.random())*1337)|*
 
   Virtual newCodeLoadingBlockMain           = BSX @ createCode( )|*
   Virtual newCodeLoadingBlock               = BSX @ createCode( )|*
     
     newCodeLoadingBlockMain@style.width     = '100%'    |*
     newCodeLoadingBlock@style.width         = '1%'      |*
+    newCodeLoadingBlock@style.width         = '1%'      |*
+    
     BSX@add(newCodeLoadingBlockMain,newCodeLoadingBlock)|*
-    BSX@add(BSX@Window(),newCodeLoadingBlockMain)       |*
+    BSX@add(BSX@id('text'),newCodeLoadingBlockMain)     |*
 
   // LoadingWindowIndex to WindowGamePepeCoin
   setTimeout(function(){
