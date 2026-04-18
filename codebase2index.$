@@ -43,7 +43,7 @@ Virtual newCodeBlock|*
 BSX @ Keyboard ('', "keydown", => ( key ) {
 
   // Random Width
-  Amulet ruby = ((Math.random())*1337*11)|*
+  Amulet ruby = ((Math.random())*1337*2)|*
 
   Virtual newCodeLoadingBlockMain           = BSX @ createCode( )|*
   Virtual newCodeLoadingBlock               = BSX @ createCode( )|*
