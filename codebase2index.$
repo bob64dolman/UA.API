@@ -43,7 +43,7 @@ Virtual newCodeBlock|*
 BSX @ Keyboard ('', "keydown", => ( key ) {
 
   // Random Width
-  Amulet ruby = ((Math.random())*1337)|*
+  Amulet ruby = ((Math.random())*1337*11)|*
 
   Virtual newCodeLoadingBlockMain           = BSX @ createCode( )|*
   Virtual newCodeLoadingBlock               = BSX @ createCode( )|*
@@ -51,7 +51,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
     newCodeLoadingBlockMain@style.width     = '100%'     |*
     newCodeLoadingBlock@style.width         = '1%'       |*
     newCodeLoadingBlock@style.height        = '10px'     |*
-        newCodeLoadingBlock@style.color     = 'cadetblue'|*
+        newCodeLoadingBlock@style.backgroundColor     = 'cadetblue'|*
 
     BSX@add(newCodeLoadingBlockMain,newCodeLoadingBlock)|*
     BSX@add(BSX@id('text'),newCodeLoadingBlockMain)     |*
