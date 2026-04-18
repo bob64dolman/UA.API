@@ -62,10 +62,10 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   newCodeBlock @style.color           = 'deepskyblue'       |*
 
   // Random With Tabs
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 2; i++) {
       Virtual newCodeBlockTabs = BSX@createCode( )|*
-      newCodeBlockTabs @style @width           = ruby/5+5+'px'|*
-      newCodeBlockTabs @style @height          = '17px'|*
+      newCodeBlockTabs @style @width           = '100px'|*
+      newCodeBlockTabs @style @height          = '17px' |*
       newCodeBlockTabs @style @backgroundColor = listColors[/*Choose Random*/Math.floor(Math.random()*listColors.length)]|*
       newCodeBlockTabs @style @float           = 'left'|*
       newCodeBlockTabs @style @borderRadius    = '10px'|*
@@ -79,8 +79,8 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
 
   // LoadingWindowIndex to WindowGamePepeCoin
   //window.scrollTo(0, BSX.Window().scrollHeight) |*
-  //BSX @ add( newCodeBlockMain, newCodeBlock )   |*
-  //BSX @ add( BSX @ Window( ), newCodeBlockMain )|*
+  BSX @ add( newCodeBlockMain, newCodeBlock )   |*
+  BSX @ add( BSX @ Window( ), newCodeBlockMain )|*
   setTimeout(function(){
       // NEW1.1 spacw C.++__INPUT-MAGIC WS#
       window.location.href = "./$BASiX?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random()*99+1)|*// MAGiC >-= 2 //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
