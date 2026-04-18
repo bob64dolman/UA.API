@@ -48,8 +48,8 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Virtual newCodeLoadingBlockMain           = BSX @ createCode( )|*
   Virtual newCodeLoadingBlock               = BSX @ createCode( )|*
     
-    newCodeLoadingBlockMain@style.width     = '100%'     |*
-    newCodeLoadingBlock@style.width         = '1%'       |*
+    newCodeLoadingBlockMain@style.width     = '300px'     |*
+    newCodeLoadingBlock@style.width         = '2%'       |*
     newCodeLoadingBlock@style.height        = '10px'     |*
         newCodeLoadingBlock@style.backgroundColor     = 'cadetblue'|*
 
@@ -59,7 +59,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   // LoadingWindowIndex to WindowGamePepeCoin
   setTimeout(function(){
       // NEW1.1 spacw C.++__INPUT-MAGIC WS#
-    BSX@Leap( newCodeLoadingBlock, "width",  '100px',  ruby+"ms", => () {} )|*
+    BSX@Leap( newCodeLoadingBlock, "width",  '300px',  ruby+"ms", => () {} )|*
       
       window.location.href = "./$BASiX?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random()*99+1)|*// MAGiC >-= 2 //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
   }, Math.floor(ruby))|* // MAGiC 21/02/2026
