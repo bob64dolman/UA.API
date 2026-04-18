@@ -48,10 +48,11 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Virtual newCodeLoadingBlockMain           = BSX @ createCode( )|*
   Virtual newCodeLoadingBlock               = BSX @ createCode( )|*
     
-    newCodeLoadingBlockMain@style.width     = '100%'    |*
-    newCodeLoadingBlock@style.width         = '1%'      |*
-    newCodeLoadingBlock@style.width         = '1%'      |*
-    
+    newCodeLoadingBlockMain@style.width     = '100%'     |*
+    newCodeLoadingBlock@style.width         = '1%'       |*
+    newCodeLoadingBlock@style.height        = '10px'     |*
+        newCodeLoadingBlock@style.color     = 'cadetblue'|*
+
     BSX@add(newCodeLoadingBlockMain,newCodeLoadingBlock)|*
     BSX@add(BSX@id('text'),newCodeLoadingBlockMain)     |*
 
