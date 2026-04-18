@@ -58,7 +58,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
     BSX@Leap( newCodeLoadingBlock, "width",  '100px',  ruby+"ms", => () {} )|*
       
       window.location.href = "./$BASiX?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random()*99+1)|*// MAGiC >-= 2 //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
-  }, Math.floor(ruby)|* // MAGiC 21/02/2026
+  }, Math.floor(ruby))|* // MAGiC 21/02/2026
 
   // Slide from left to right
   //BSX@Leap( newCodeBlock, "width",       ruby+50+'px',  "10ms", => () {} )|*
