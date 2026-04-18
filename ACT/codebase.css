@@ -48,6 +48,6 @@ code-tile{
     background-color: #cff6f5;
     border-radius: 43%;
   z-index: -1;
-
+  box-shadow: 0px -5px 7px #4425ff;
 }
 /** Created by: Bob Dolman **/
