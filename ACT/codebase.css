@@ -30,7 +30,7 @@ code-tile{
 #dobb-player{
   width: 22px;
   height: 58px;
-  background-color: orange;
+
   /* transform: rotateX(47deg) rotateZ(30deg); */
   transform: rotateX(0deg) rotateZ(-27deg);
   margin-left: 0px;
