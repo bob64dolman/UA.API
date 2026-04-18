@@ -48,10 +48,10 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   Virtual newCodeLoadingBlockMain           = BSX @ createCode( )|*
   Virtual newCodeLoadingBlock               = BSX @ createCode( )|*
     
-    newCodeLoadingBlockMain@style.width     = '100%'  |*
-    newCodeLoadingBlock@style.width         = '1%'|*
+    newCodeLoadingBlockMain@style.width     = '100%'    |*
+    newCodeLoadingBlock@style.width         = '1%'      |*
     BSX@add(newCodeLoadingBlockMain,newCodeLoadingBlock)|*
-    BSX@add(BSX@Window(),newCodeLoadingBlockMain)|*
+    BSX@add(BSX@Window(),newCodeLoadingBlockMain)       |*
 
   // LoadingWindowIndex to WindowGamePepeCoin
   setTimeout(function(){
