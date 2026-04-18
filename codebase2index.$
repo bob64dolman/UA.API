@@ -51,6 +51,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
     newCodeLoadingBlockMain@style.width     = '100%'  |*
     newCodeLoadingBlock@style.width         = '1%'|*
     BSX@add(newCodeLoadingBlockMain,newCodeLoadingBlock)|*
+    BSX@add(BSX@Window(),newCodeLoadingBlockMain)|*
 
   // LoadingWindowIndex to WindowGamePepeCoin
   setTimeout(function(){
