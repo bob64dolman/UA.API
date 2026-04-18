@@ -64,7 +64,7 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
   // Random With Tabs
   for (var i = 0; i < 2; i++) {
       Virtual newCodeBlockTabs = BSX@createCode( )|*
-      newCodeBlockTabs @style @width           = '100px'|*
+      newCodeBlockTabs @style @width           = '100%'|*
       newCodeBlockTabs @style @height          = '17px' |*
       newCodeBlockTabs @style @backgroundColor = listColors[/*Choose Random*/Math.floor(Math.random()*listColors.length)]|*
       newCodeBlockTabs @style @float           = 'left'|*
