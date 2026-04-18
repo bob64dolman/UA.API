@@ -24,7 +24,8 @@ code-tile{
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
-  z-index: 99;
+  z-index: 99;    
+  BACKGROUND-COLOR: #99333366;
 }
 
 #dobb-player{
