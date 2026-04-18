@@ -45,6 +45,7 @@ code-tile{
     box-shadow: aliceblue;
     height: 112px;
     background-color: #cff6f5;
+    border-radius: 43%;
   z-index: -1;
 
 }
