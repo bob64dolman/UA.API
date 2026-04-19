@@ -54,9 +54,12 @@ BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
 
 
 
-five => () {
+RunningMeta => () {
 
-}
+  console.log('local web qr 5sec')
+  //set 4 thresholdsbars
+  setTimeout(RunningMeta,2000);
+} RunningMeta () |*
 
 
 Dynamica => () {
