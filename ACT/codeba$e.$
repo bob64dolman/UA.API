@@ -1,11 +1,16 @@
 // Created by: Bob Dolman
 Abstract BaSiXLibrary = new BaSiX@BSX()|* Virtual BSX = BD|*
 
+
 /* Intro Animation */
 BSX@Window().style.backgroundColor='#272729'|*//'#232323'
-  BSX @ Keyboard ('', "keydown", => ( key ) { /* BSX@Key@K(); */ /**BSX.Key('enter') menu()**/
+
+BSX @ Keyboard ('', "keydown", => ( key ) { /* BSX@Key@K(); */ /**BSX.Key('enter') menu()**/
+
 })|*
 
+
+console.log()|*
 /* Fade In Left And Right Pane*/
 BSX.Leap( BSX@id('v-left-pane'), "width",       '20%',  "60ms", => () {
 
@@ -14,15 +19,26 @@ BSX.Leap( BSX@id('v-left-pane'), "width",       '20%',  "60ms", => () {
   /* Wait for 2 sec before next animation */
   BSX.Leap( BSX@id('ctc-title'), "opacity",       '0.9',  "2000ms", => () {
 
+    /* Hide Title and welcome screen after transform */
+    //BSX.Leap( BSX@id('ctc-title'), "opacity",       '0',  "60ms", => () {
+      //BSX@id('ctc-title')@style@display='none';
+
+    //})|*
+
     BSX.Leap( BSX@id('ctc-welcome'), "opacity",       '0',  "60ms", => () {
       BSX@id('ctc-welcome') @style  @display  = 'none'|*
     })|*
-  })|*
+
+  } )|*
+
+
 
 } )|*
 BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
+
       BSX@id('ctc') @style @visibility = 'visible'|*
-})|*
+
+} )|*
 
 
 
@@ -38,21 +54,34 @@ BSX.Leap( BSX@id('v-right-pane'), "width",       '20%',  "60ms", => () {
 
 
 
+five => () {
+
+}
+
+
+Dynamica => () {
+
+}
 
 
 
+camera => ( ) {
+  
+}
 
+player => ( i ) {
 
-
-
-
-
+  usecase(i){
+    case 'Merchant': alert('merch');done |* //X
+  }
+}
 
 BSX @ Keyboard ('', "keydown", => ( key ) {
 
   //key.preventDefault();
+ // player()|*
+  //camera()|*
 
-  
 
   /*Move Obj left, right, forward, backwards*/
 
