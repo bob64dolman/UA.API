@@ -53,7 +53,7 @@
         height: 100%;
       }
     
-      a, li, ul, body{
+          a, li, ul, body{
         color:blue;
         text-decoration: underline;
         border-left: 0px solid silver;
@@ -67,6 +67,7 @@
         border-left: 1px solid lightblue;
         height:25px;
         margin: 5px;
+        
       }
 
       #primary_nav_wrap
@@ -80,7 +81,6 @@
         position:relative;
         float:left;
         margin:0;
-        padding:0
       }
 
       #primary_nav_wrap ul a
@@ -98,12 +98,14 @@
         position:relative;
         float:left;
         margin:0;
-        padding:0
+        padding-bottom:5px;
       }
 
       #primary_nav_wrap ul li.current-menu-item
       {
-        background:#ddd
+        background:#ddd;
+            background-color:#a6fc9c;
+
       }
 
       #primary_nav_wrap ul li:hover
@@ -143,8 +145,6 @@
       {
         display:block
       }
-
-
     </style>
 
     <!-- Code BASiX Standard .CS Code -->
@@ -177,88 +177,93 @@
     @RULES @NOTE @WARNING @SYNTAX @CNDFI @VISUALSCSS @BD 
 
     <h1>Universa Worlds </> BASIX C Build Setup</h1>
-    <nav id="primary_nav_wrap">
-    <ul>
-      <li class="current-menu-item"><a href="#">UA API</a></li>
-      <li><a href="#">DragonKnight</a>
-        
-      </li>
-      <li><a href="#">DK</a>
-        <ul>
-          <li><a href="#">Merchant..</a></li>
-          <li><a href="#">Merchant++</a><ul>
-                  <li><a href="#">Auction</a></li>
-                  <li><a href="#">Auction++</a></li>
-              <li><a href="#">AuctionHouse</a></li>
-                  <li><a href="#">AuctionHouse++</a></li>
-                </ul>
-          </li>
-          <li><a href="#">Rewards Monthly</a></li>
-          <li><a href="#">PlayerLevel: 15 </a></li>
-          <li><a href="#">GroundLevel: 01 </a></li>
-        </ul>
-      </li>
-      <li><a href="#">Equipementi</a>
-        <ul>
-          <li><a href="#">BASiX:Create </a></li>
-          <li><a href="#">BASiX:Craft </a></li>
-          <li><a href="#">..Skills </a></li>
-          <li><a href="#">..MapsTerrein</a></li>
-          <li><a href="#">BASiX:Diary</a></li>
-          <li><a href="#">BaSiX:Book</a>
-            <ul>
-              <li><a href="#">Deep Menu 1</a>
-                <ul>
-                  <li><a href="#">.. Auction</a></li>
-                  <li><a href="#">.. Auction++</a></li>
-                  <li><a href="#">Sub Deep 2</a></li>
-                  <li><a href="#">Sub Deep 3</a></li>
-                  <li><a href="#">Sub Deep 4</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Deep Menu 2</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#">EventRFindr</a>
-        <ul>
-          <li><a href="#">Find..</a></li>
-          <li><a href="#">Events Daily</a></li>
-          <li><a href="#">Events Monthly</a></li>
-          <li><a href="#">Raids PVE Dragon & Monsters</a></li>
-          <li><a href="#">TradeRoute Merchant++1</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Marketplace</a>
-        <ul>
-          <li class="dir"><a href="#">$Bank</a></li>
-          <li class="dir"><a href="#">Rest Menu </a>
-            <ul>
-              <li><a href="#">Heal</a></li>
-              <li><a href="#">Heal++</a></li>
-              <li><a href="#">MercyHeal</a></li>
-              <li><a href="#">MercyHeal++</a>
-                <ul>
-              <li><a href="#">.. GroupHeal++</a></li>
-              <li><a href="#">.. AllHeal++</a></li>
-              <li><a href="#">.. MercyHealOnOne++</a></li>
-              <li><a href="#">AllTheOneBook__</a></li>
-              <li><a href="#">Zero Zero</a></li>
-            </ul></li>
-              
-              <li><a href="#">Zero Zero</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Sub Menu 3</a></li>
-          <li><a href="#">Stash</a></li>
-        </ul>
-      </li>
-      <li><a href="#">GoldMondayBankFictional</a></li>
+          @RULES @NOTE @WARNING @SYNTAX @CNDFI @VISUALSCSS @BD 
 
-      <li><a href="#">Auto Play/ Roll out..</a></li>
+<h1>Universa Worlds </> BASIX C Build Setup</h1>
+<code id="primary_nav_wrap">
+<ul>
+  <li class="current-menu-item"><a href="#">01 {UA_API}</a></li>
+  <li><a href="#">{DragonKnight}</a>
+    
+  </li>
+  <li><a href="#">{DK}</a>
+    <ul>
+      <li><a href="#">Merchant..</a></li>
+      <li><a href="#">Merchant++</a><ul>
+              <li><a href="#">Auction</a></li>
+              <li><a href="#">Auction++</a></li>
+          <li><a href="#">AuctionHouse</a></li>
+              <li><a href="#">AuctionHouse++</a></li>
+            </ul>
+      </li>
+      <li><a href="#">Rewards Monthly</a></li>
+      <li><a href="#">PlayerLevel: 15 </a></li>
+      <li><a href="#">GroundLevel: 01 </a></li>
     </ul>
-    </nav>
+  </li>
+  <li><a href="#">{Equipment.i}</a>
+    <ul>
+      <li><a href="#">BASiX:Create </a></li>
+      <li><a href="#">BASiX:Craft </a></li>
+      <li><a href="#">..Skills </a></li>
+      <li><a href="#">..MapsTerrein</a></li>
+      <li><a href="#">BASiX:Diary</a></li>
+      <li><a href="#">BaSiX:Book</a>
+        <ul>
+          <li><a href="#">Deep Menu 1</a>
+            <ul>
+              <li><a href="#">.. Auction</a></li>
+              <li><a href="#">.. Auction++</a></li>
+              <li><a href="#">Sub Deep 2</a></li>
+              <li><a href="#">Sub Deep 3</a></li>
+              <li><a href="#">Sub Deep 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Deep Menu 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">{EventRFindr}</a>
+    <ul>
+      <li><a href="#">Find..</a></li>
+      <li><a href="#">Events Daily</a></li>
+      <li><a href="#">Events Monthly</a></li>
+      <li><a href="#">Raids PVE Dragon & Monsters</a></li>
+      <li><a href="#">TradeRoute Merchant++1</a></li>
+    </ul>
+  </li>
+  <li><a href="#">{Marketplace}</a>
+    <ul>
+      <li class="dir"><a href="#">$Bank</a></li>
+      <li class="dir"><a href="#">Rest Menu </a>
+        <ul>
+          <li><a href="#">Heal</a></li>
+          <li><a href="#">Heal++</a></li>
+          <li><a href="#">MercyHeal</a></li>
+          <li><a href="#">MercyHeal++</a>
+            <ul>
+          <li><a href="#">.. GroupHeal++</a></li>
+          <li><a href="#">.. AllHeal++</a></li>
+          <li><a href="#">.. MercyHealOnOne++</a></li>
+          <li><a href="#">AllTheOneBook__</a></li>
+          <li><a href="#">Zero Zero</a></li>
+        </ul></li>
+          
+          <li><a href="#">Zero Zero</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Auction House  (gitgotgoggles)</a></li>
+      
+      <li><a href="#">Magazine(_____StorageRoom)</a></li>      <li><a href="#">Magazine(_____StorageRoom)</a></li>
+
+    </ul>
+  </li>
+  <li><a href="#">{GoldMoneyBank}</a></li>
+
+  <li><a href="#">{Auto Play/ Roll out..}</a></li>
+</ul>
+</code>
 
   </body>
 
