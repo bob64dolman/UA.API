@@ -52,14 +52,14 @@ BSX @ Keyboard ('', "keydown", => ( key ) {
     newCodeLoadingBlock@style.width         = '2%'       |*
     newCodeLoadingBlock@style.height        = '10px'     |*
         newCodeLoadingBlock@style.backgroundColor     = 'cadetblue'|*
-`
+
     BSX@add(newCodeLoadingBlockMain,newCodeLoadingBlock)|*
     BSX@add(BSX@id('text'),newCodeLoadingBlockMain)     |*
 
   // LoadingWindowIndex to WindowGamePepeCoin
   setTimeout(function(){
       // NEW1.1 spacw C.++__INPUT-MAGIC WS#
-    BSX@Leap( newCodeLoadingBlock, "width",  '100%',  "101ms", => () {} )|*
+    BSX@Leap( newCodeLoadingBlock, "width",  '100%',  "11ms", => () {} )|*
       
       window.location.href = "./$BASiX?C.++" + $INTEGRAL__SCROLL + Math.floor(Math.random()*99+1)|*// MAGiC >-= 2 //redirected_name C.LightningHyperForwarddRedirectt(e) ==> $C :: $PoetryFeather
   }, Math.floor(ruby))|* // MAGiC 21/02/2026
