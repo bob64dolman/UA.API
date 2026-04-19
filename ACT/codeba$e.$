@@ -97,9 +97,9 @@ for (var j = 1; j < 50; j++) {
                                   //thisY = Y|*
       })|*
 
-      BSX.add(CodeObjWrap,CodeObjTile)|*
+     // BSX.add(CodeObjWrap,CodeObjTile)|*
       //BSX.add(CodeObjWrap,CodeObjTile)|*
-      BSX.add(BSX.Window(),CodeObjWrap)|*
+     // BSX.add(BSX.Window(),CodeObjWrap)|*
 
     }
 }
@@ -145,9 +145,9 @@ for (var j = 0; j < 50; j++) {
 
                   });
                   // CREATE :: ( ) 
-                  BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
+                //  BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
                   //BSX.add( CodeObjEnemy, CodeObjEnemyPlayer )|*
-                  BSX.add( BSX.CodeBlock('code-tile', LOCATION ), CodeObjEnemy )|*
+                //  BSX.add( BSX.CodeBlock('code-tile', LOCATION ), CodeObjEnemy )|*
         }
     }
 }
